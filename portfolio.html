@@ -8,6 +8,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            
             margin: 0;
             padding: 0;
             background-color:#474646;
@@ -16,6 +17,7 @@
 
         header {
             background-color: rgba(0, 0, 0, 0.8);
+            
             color: #fff;
             text-align: center;
             padding: 20px;
@@ -71,30 +73,44 @@
             color: #181818;
         }
         
+        #personal-info span{
+            float:right;
+        }
+
         li{
             color: #181818;
         }
-        table {
+        #marks {
             width: 100%;
             border-collapse: collapse;
             margin-top: 10px;
         }
 
-        table,
+        #marks,
         td {
             border: 1px solid #151515;
             padding: 8px;
             color: #333;
         }
 
-        td {
+        #marks td {
             text-align: center;
         }
+        
+        #info{
+            border:none;
+            padding:30px;
+        }
+        #info td{
+            border: none;
+            padding-right: 30px;
+        }
+
 
         .bottom {
             bottom: 0;
             margin-top: 30px;
-            width: 100%;
+            width: 96vw;
             background-color: rgb(23, 23, 23);
             padding: 20px;
             text-align: center;
@@ -114,11 +130,13 @@
         }
         .personal-img {
             float: right;
-            width: 150px;
+            width: 200px;
             height: auto;
             border-radius: 10px;
-            margin-left: 20px;
+            margin-right:40px;
+            margin-top:45px;
         }
+        
     </style>
 </head>
 
@@ -127,92 +145,97 @@
         <h1>My Portfolio</h1>
     </header>
 
-    <div class="container">
-        <div class="section" id="personal-info">
-            <h2>Personal Information</h2>
-            <img src="https://thegnainsider.com/wp-content/uploads/2024/02/2384A08D-CF8C-40B9-81BA-DEF63B7411EF.jpeg" alt="Profile Picture" class="personal-img">
-            <p><strong>Name:</strong> <span>Shubham Mahile</span></p>
-            <p><strong>Date of Birth:</strong> <span>July 24, 2005</span></p>
-            <p><strong>Mother's name:</strong> <span>Asha Mahile</span></p>
-            <p><strong>Father's name:</strong> <span>Bankat Mahile</span></p>
-            <p><strong>Education:</strong> <span>B.Tech First Year</span></p>
-            <p><strong>Email:</strong> <span>subham123mahile@gmail.com</span></p>
-            <p><strong>Contact:</strong> <span>8319180640</span></p>
-        </div>
-
-        <div class="section" id="intro">
-            <h3>Welcome to my portfolio, go ahead and know more about me...</h3>
-            <p>"I am Shubham Mahile, a B.Tech first-year student with a passion for photography, UI/UX design, and app
-                development. I aspire to create visually stunning designs and intuitive user experiences that leave
-                a lasting impact. With a keen eye for detail and a love for innovation, I am eager to explore and
-                grow in these fields."</p>
-        </div>
-
-        <div class="section" id="went-to">
-            <h2>Institutions Joined</h2>
-            <ul>
-                <li><strong>Jawahar Navodaya vidhyalaya , Barwani(M.P.)</strong> for schooling [2015-2022]</li>
-                <li><strong>Dakshana foundation</strong> for JEE preparation [2022-2023]</li>
-                <li><strong>N.I.T. Kurukshetra (Haryana)</strong> for pursuing B.Tech [2023 - till now]</li>
-            </ul>
-        </div>
-
-        <div class="section" id="academics">
-            <h2>Academics</h2>
-            <table>
-                <tr>
-                    <th>10th Boards marks</th>
-                    <th>12th Boards marks</th>
-                    <th>JEE percentile</th>
-                </tr>
-                <tr>
-                    <td>96% marks</td>
-                    <td>95% marks</td>
-                    <td>97 %ile</td>
-                </tr>
-            </table>
-        </div>
-
-        <div class="section" id="achievements">
-            <h2>Achievements</h2>
-            <ul>
-                <li>2nd Ranker in district in 10th Boards</li>
-                <li>5th Ranker in district in 12th Boards</li>
-                <li>Cleared JDST 2022 and joined Dakshana foundation</li>
-                <li>Won cryptic crossword competition at Indore cluster and Represented Indore at National level at CCCC
-                    2020</li>
-                <li>Cleared NTSE both stages in NTSE 2018-19</li>
-                <li>REGIONAL LEVEL kho-kho player</li>
-                <li>Selected for MT.Everest Foundation MANALI MOUNTAINEERING 2018</li>
-            </ul>
-        </div>
-
-        <div class="section" id="projects-done">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Photography Portfolio Website</h3>
-                <p>A personal website showcasing my best photography work with galleries, descriptions, and contact
-                    information : <a href="https://dribbble.com/tags/photographer-website" target="_blank">shubhamphotogy.com</a></p>
+    <div class="main">
+        <div class="container">
+            <div class="section" id="personal-info">
+                <h2>Personal Information</h2>
+                <img src="https://thegnainsider.com/wp-content/uploads/2024/02/2384A08D-CF8C-40B9-81BA-DEF63B7411EF.jpeg" alt="Profile Picture" class="personal-img">
+                <table id="info">
+                <tr><td><strong>Name:</strong></td> <td>Shubham Mahile</td></tr>
+                <tr><td><strong>Date of Birth:</strong></td> <td>July 24, 2005</td></tr>
+                <tr><td><strong>Mother's name:</strong></td> <td>Asha Mahile</td></tr>
+                <tr><td><strong>Father's name:</strong></td> <td>Bankat Mahile</td></tr>
+                <tr><td><strong>Education:</strong></td> <td>B.Tech First Year</td></tr>
+                <tr><td><strong>Email:</strong></td> <td>subham123mahile@gmail.com</td></tr>
+                <tr><td><strong>Contact:</strong></td> <td>8319180640</td></tr></table>
             </div>
-            <div class="project">
-                <h3>Travel Companion App</h3>
-                <p>An app designed to help travelers find the best destinations, hotels, restaurants, and attractions
-                    based on their preferences and real-time data : <a href="https://play.google.com/store/apps/details?id=com.makemytrip&hl=en_IN&gl=US" target="_blank">travelo.apk</a></p>
+    
+            <div class="section" id="intro">
+                <h3>Welcome to my portfolio, go ahead and know more about me...</h3>
+                <p>"I am Shubham Mahile, a B.Tech first-year student with a passion for photography, UI/UX design, and app
+                    development. I aspire to create visually stunning designs and intuitive user experiences that leave
+                    a lasting impact. With a keen eye for detail and a love for innovation, I am eager to explore and
+                    grow in these fields."</p>
             </div>
-            <div class="project">
-                <h3>Social Media Redesign</h3>
-                <p>A redesign of a popular social media platform focusing on improving user experience, navigation, and
-                    engagement through intuitive UI/UX design : <a href="https://www.instagram.com" target="_blank">Instapound.com</a></p>
+    
+            <div class="section" id="went-to">
+                <h2>Institutions Joined</h2>
+                <ul>
+                    <li><strong>Jawahar Navodaya vidhyalaya , Barwani(M.P.)</strong> for schooling [2015-2022]</li>
+                    <li><strong>Dakshana foundation</strong> for JEE preparation [2022-2023]</li>
+                    <li><strong>N.I.T. Kurukshetra (Haryana)</strong> for pursuing B.Tech [2023 - till now]</li>
+                </ul>
             </div>
+    
+            <div class="section" id="academics">
+                <h2>Academics</h2>
+                <table id="marks">
+                    <tr>
+                        <th>10th Boards marks</th>
+                        <th>12th Boards marks</th>
+                        <th>JEE percentile</th>
+                    </tr>
+                    <tr>
+                        <td>96% marks</td>
+                        <td>95% marks</td>
+                        <td>97 %ile</td>
+                    </tr>
+                </table>
+            </div>
+    
+            <div class="section" id="achievements">
+                <h2>Achievements</h2>
+                <ul>
+                    <li>2nd Ranker in district in 10th Boards</li>
+                    <li>5th Ranker in district in 12th Boards</li>
+                    <li>Cleared JDST 2022 and joined Dakshana foundation</li>
+                    <li>Won cryptic crossword competition at Indore cluster and Represented Indore at National level at CCCC
+                        2020</li>
+                    <li>Cleared NTSE both stages in NTSE 2018-19</li>
+                    <li>REGIONAL LEVEL kho-kho player</li>
+                    <li>Selected for MT.Everest Foundation MANALI MOUNTAINEERING 2018</li>
+                </ul>
+            </div>
+    
+            <div class="section" id="projects-done">
+                <h2>Projects</h2>
+                <div class="project">
+                    <h3>Photography Portfolio Website</h3>
+                    <p>A personal website showcasing my best photography work with galleries, descriptions, and contact
+                        information : <a href="https://dribbble.com/tags/photographer-website" target="_blank">shubhamphotogy.com</a></p>
+                </div>
+                <div class="project">
+                    <h3>Travel Companion App</h3>
+                    <p>An app designed to help travelers find the best destinations, hotels, restaurants, and attractions
+                        based on their preferences and real-time data : <a href="https://play.google.com/store/apps/details?id=com.makemytrip&hl=en_IN&gl=US" target="_blank">travelo.apk</a></p>
+                </div>
+                <div class="project">
+                    <h3>Social Media Redesign</h3>
+                    <p>A redesign of a popular social media platform focusing on improving user experience, navigation, and
+                        engagement through intuitive UI/UX design : <a href="https://www.instagram.com" target="_blank">Instapound.com</a></p>
+                </div>
+            </div>
+            
         </div>
-    </div>
-
-    <div class="bottom">
-        <h3>Follow Me:</h3>
-        <a href="#">Twitter</a>
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
-        <p>&copy; 2024 My Portfolio</p>
+    
+    
+        <div class="bottom">
+            <h3>Follow Me:</h3>
+            <a href="#">Twitter</a>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <p>&copy; 2024 My Portfolio</p>
+        </div>
     </div>
 
 </body>
